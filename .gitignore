@@ -1,5 +1,6 @@
-trainlms/
-testlms/
+transformed_data/
+env.bat
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
