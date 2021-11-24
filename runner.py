@@ -9,6 +9,7 @@ def train(model, opt, criterion, train_loader, test_loader, model_name, color_sp
     f = open(f"{model_name}-{color_space}.log", 'w')
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    print(device)
     model.to(device)
     train_loss = []
     test_loss = []

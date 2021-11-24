@@ -21,6 +21,6 @@ model.classifier = clf
 print(model.classifier)
 opt = optim.Adam(model.classifier.parameters(), lr=0.003)
 criterion = nn.NLLLoss()
-train_loader, test_loader = get_data('transformed_data', 'transformed_data')
+train_loader, test_loader = get_data('original_data', 'original_data')
 print("============================== DATA LOADED ==============================")
-train(model, opt, criterion, train_loader, test_loader, 'EfficientNet', 'LMS', 1, 10)
+train(model, opt, criterion, train_loader, test_loader, 'EfficientNet', 'RGB', 1, 10)
