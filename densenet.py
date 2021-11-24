@@ -19,6 +19,6 @@ clf = nn.Sequential(OrderedDict([('Fully_Connected_Layer_1', nn.Linear(1024, 512
 model.classifier = clf
 opt = optim.Adam(model.classifier.parameters(), lr=0.003)
 criterion = nn.NLLLoss()
-train_loader, test_loader = get_data('transformed_data', 'transformed_data')
+train_loader, test_loader = get_data('original_data', 'original_data')
 print("============================== DATA LOADED ==============================") 
-train(model, opt, criterion, train_loader, test_loader, 'DenseNet', 'LMS', 1, 10)
+train(model, opt, criterion, train_loader, test_loader, 'DenseNet', 'RGB', 1, 10)
