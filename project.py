@@ -104,7 +104,7 @@ if __name__ == '__main__':
                                  ('Output', nn.LogSoftmax(dim=1))]))
 
 
-            saved_model.classifier = clf
+            saved_model.fc = clf
             saved_model.load_state_dict(torch.load('Resnet-LMS.pth')['state_dict']())
         
         saved_model.eval()
