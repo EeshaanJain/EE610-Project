@@ -2,8 +2,8 @@ from torchvision import transforms, datasets
 from torch.utils.data import DataLoader
 
 def get_data(train_dir, test_dir):
-    train_transforms = transforms.Compose([transforms.RandomResizedCrop(224), transforms.ToTensor()])
-    test_transforms = transforms.Compose([transforms.Resize(255), transforms.CenterCrop(224), transforms.ToTensor()])
+    train_transforms = transforms.Compose([transforms.RandomResizedCrop(160), transforms.ToTensor()])
+    test_transforms = transforms.Compose([transforms.Resize(255), transforms.CenterCrop(160), transforms.ToTensor()])
 
     train_data = datasets.ImageFolder(train_dir + '/Train', transform=train_transforms)
     test_data = datasets.ImageFolder(test_dir + '/Test', transform=test_transforms)
