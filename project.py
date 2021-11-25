@@ -112,10 +112,12 @@ if __name__ == '__main__':
     elif args.model == 'e': 
         saved_model = models.efficientnet_b1(pretrained=True)
         if args.mode == 'Sp':
-            clf = nn.Sequential(OrderedDict([('Fully_Connected_Layer_1', nn.Linear(2048, 256)),
-                                    ('ReLU_3', nn.ReLU()),
-                                    ('Fully_Connected_Layer_3', nn.Linear(256, 2)),
-                                    ('Output', nn.LogSoftmax(dim=1))]))
+            clf = nn.Sequential(OrderedDict([('Dropout_1', nn.Dropout(p=0.2, inplace=True)),
+                                 ('Fully_Connected_Layer_1', nn.Linear(1280, 128)),
+                                
+                                 ('ReLU_3', nn.ReLU()),
+                                 ('Fully_Connected_Layer_3', nn.Linear(128, 2)),
+                                 ('Output', nn.LogSoftmax(dim=1))]))
 
             saved_model.classifier = clf
             saved_model.load_state_dict(torch.load('EfficientNet-LMS-less.pth')['state_dict']())
@@ -142,7 +144,7 @@ if __name__ == '__main__':
                                           transforms.ToTensor()])
 
 
-    saved_model.eval()
+
     classes = {0: 'Cat', 1: 'Dog'}
     result = np.argmax(saved_model(image_loader(data_transforms, args.image, args.convert)).detach().numpy())
 
