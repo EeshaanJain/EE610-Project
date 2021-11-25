@@ -3,6 +3,9 @@
 One  of  the  most  fundamental  applications  in  the  field  of computer  vision  is  image  classification. Since the advent of deep learning techniques, it has been a norm to resort to RGB color space for processing and forward implementations. In this paper, we aim to find out how processing in the canine vision spectrum affects image classification models considering animals view the world differently than humans and might be able to perceive notions and surrounding objects in a more enhanced/restricted way. Specifically, we benchmark our dataset on various models.
 
 Report: Report.pdf
+
+Video Link: https://youtu.be/HO7483F-RbA
+
 Slides: Slides.pdf
 
 ## Installation
@@ -51,69 +54,70 @@ This gives the output as shown. (Note that the image on top-left is the original
 ![slide 21](example.png)
 
 ## Directory structure
-./
-    dataloader.py
-    DenseNet-LMS-less.pth
-    DenseNet-LMS.pth
-    DenseNet-RGB-less.pth
-    DenseNet-RGB.pth
-    densenet.py
-    EfficientNet-LMS-less.pth
-    EfficientNet-LMS.pth
-    EfficientNet-RGB-less.pth
-    EfficientNet-RGB.log
-    EfficientNet-RGB.pth
-    effnet.py
-    env.bat
-    example.png
-    extracting_data.py
-    help.txt
-    image_converter.py
-    old.txt
-    project.py
-    README.md
-    Report.pdf
-    requirements.txt
-    Resnet-LMS-less.pth
-    Resnet-LMS.pth
-    Resnet-RGB-less.pth
-    Resnet-RGB.pth
-    resnet.py
-    runner.py
-    Slides.pdf
-    test-cat.jpg
-    test-dog.jpg
-    tree.py
-    tree.txt
-    models/
-        densenet/
-            DenseNet-LMS-less.log
-            DenseNet-LMS-less.png
-            DenseNet-LMS.log
-            DenseNet-LMS.png
-            DenseNet-RGB-less.log
-            DenseNet-RGB-less.png
-            DenseNet-RGB.log
-            DenseNet-RGB.png
-        effnet/
-            EfficientNet-LMS-less.log
-            EfficientNet-LMS-less.png
-            EfficientNet-LMS.log
-            EfficientNet-LMS.png
-            EfficientNet-RGB-less.log
-            EfficientNet-RGB-less.png
-            EfficientNet-RGB.png
-        resnet/
-            Resnet-LMS-less.log
-            Resnet-LMS-less.png
-            Resnet-LMS.log
-            Resnet-LMS.png
-            Resnet-RGB-less.log
-            Resnet-RGB-less.png
-            Resnet-RGB.log
-            Resnet-RGB.png
+- 📂 __EE610\-Project__
+   - 📄 [DenseNet\-LMS\-less.pth](DenseNet-LMS-less.pth)
+   - 📄 [DenseNet\-LMS.pth](DenseNet-LMS.pth)
+   - 📄 [DenseNet\-RGB\-less.pth](DenseNet-RGB-less.pth)
+   - 📄 [DenseNet\-RGB.pth](DenseNet-RGB.pth)
+   - 📄 [EfficientNet\-LMS\-less.pth](EfficientNet-LMS-less.pth)
+   - 📄 [EfficientNet\-LMS.pth](EfficientNet-LMS.pth)
+   - 📄 [EfficientNet\-RGB\-less.pth](EfficientNet-RGB-less.pth)
+   - 📄 [EfficientNet\-RGB.log](EfficientNet-RGB.log)
+   - 📄 [EfficientNet\-RGB.pth](EfficientNet-RGB.pth)
+   - 📄 [README.md](README.md)
+   - 📄 [Report.pdf](Report.pdf)
+   - 📄 [Resnet\-LMS\-less.pth](Resnet-LMS-less.pth)
+   - 📄 [Resnet\-LMS.pth](Resnet-LMS.pth)
+   - 📄 [Resnet\-RGB\-less.pth](Resnet-RGB-less.pth)
+   - 📄 [Resnet\-RGB.pth](Resnet-RGB.pth)
+   - 📄 [Slides.pdf](Slides.pdf)
+   - 📄 [dataloader.py](dataloader.py)
+   - 📄 [densenet.py](densenet.py)
+   - 📄 [effnet.py](effnet.py)
+   - 📄 [env.bat](env.bat)
+   - 📄 [example.png](example.png)
+   - 📄 [extracting\_data.py](extracting_data.py)
+   - 📄 [help.txt](help.txt)
+   - 📄 [image\_converter.py](image_converter.py)
+   - 📂 __models__
+     - 📂 __densenet__
+       - 📄 [DenseNet\-LMS\-less.log](models/densenet/DenseNet-LMS-less.log)
+       - 📄 [DenseNet\-LMS\-less.png](models/densenet/DenseNet-LMS-less.png)
+       - 📄 [DenseNet\-LMS.log](models/densenet/DenseNet-LMS.log)
+       - 📄 [DenseNet\-LMS.png](models/densenet/DenseNet-LMS.png)
+       - 📄 [DenseNet\-RGB\-less.log](models/densenet/DenseNet-RGB-less.log)
+       - 📄 [DenseNet\-RGB\-less.png](models/densenet/DenseNet-RGB-less.png)
+       - 📄 [DenseNet\-RGB.log](models/densenet/DenseNet-RGB.log)
+       - 📄 [DenseNet\-RGB.png](models/densenet/DenseNet-RGB.png)
+     - 📂 __effnet__
+       - 📄 [EfficientNet\-LMS\-less.log](models/effnet/EfficientNet-LMS-less.log)
+       - 📄 [EfficientNet\-LMS\-less.png](models/effnet/EfficientNet-LMS-less.png)
+       - 📄 [EfficientNet\-LMS.log](models/effnet/EfficientNet-LMS.log)
+       - 📄 [EfficientNet\-LMS.png](models/effnet/EfficientNet-LMS.png)
+       - 📄 [EfficientNet\-RGB\-less.log](models/effnet/EfficientNet-RGB-less.log)
+       - 📄 [EfficientNet\-RGB\-less.png](models/effnet/EfficientNet-RGB-less.png)
+       - 📄 [EfficientNet\-RGB.png](models/effnet/EfficientNet-RGB.png)
+     - 📂 __resnet__
+       - 📄 [Resnet\-LMS\-less.log](models/resnet/Resnet-LMS-less.log)
+       - 📄 [Resnet\-LMS\-less.png](models/resnet/Resnet-LMS-less.png)
+       - 📄 [Resnet\-LMS.log](models/resnet/Resnet-LMS.log)
+       - 📄 [Resnet\-LMS.png](models/resnet/Resnet-LMS.png)
+       - 📄 [Resnet\-RGB\-less.log](models/resnet/Resnet-RGB-less.log)
+       - 📄 [Resnet\-RGB\-less.png](models/resnet/Resnet-RGB-less.png)
+       - 📄 [Resnet\-RGB.log](models/resnet/Resnet-RGB.log)
+       - 📄 [Resnet\-RGB.png](models/resnet/Resnet-RGB.png)
+   - 📄 [old.txt](old.txt)
+   - 📄 [project.py](project.py)
+   - 📄 [requirements.txt](requirements.txt)
+   - 📄 [resnet.py](resnet.py)
+   - 📄 [runner.py](runner.py)
+   - 📄 [test\-cat.jpg](test-cat.jpg)
+   - 📄 [test\-dog.jpg](test-dog.jpg)
+   - 📄 [tree.md](tree.md)
+   - 📄 [tree.py](tree.py)
+   - 📄 [tree.txt](tree.txt)
 
-
+        
 ## Authors
 
 - Aaryan Gupta
